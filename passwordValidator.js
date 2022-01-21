@@ -8,7 +8,7 @@ const reader = readline.createInterface({
 //Check to see if it's at least 10 characters long, with a success or fail message
 //BONUS: Check for more conditions on the password, and output ASCII 'art'. I'm just going to use an emoji :^)
 
-reader.question(`Welcome to the Password-Validator 900! Enter your password:`, (password) =>{
+reader.question(`Welcome to the Password-Validator 900!\nEnter your password:`, (password) =>{
     const regex = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*_]{6,16}$/);
 
     switch(password !== null){
