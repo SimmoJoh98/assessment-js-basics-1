@@ -9,7 +9,7 @@ const reader = readline.createInterface({
 //BONUS: Check for more conditions on the password, and output ASCII 'art'. I'm just going to use an emoji :^)
 
 reader.question(`Welcome to the Password-Validator 900! Enter your password:`, (password) =>{
-    let regex = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*_]{6,16}$/);
+    const regex = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*_]{6,16}$/);
 
     switch(password !== null){
         //If the password is acceptable, check additional requirements against regex, THEN log success message.
